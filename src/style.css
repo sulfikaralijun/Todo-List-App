@@ -11,14 +11,16 @@ body {
   height: 100vh;
   display: grid;
   place-items: center;
+  background-color: #EEF5FF;
 }
 .wrapper {
-  width: 300px;
+  /* width: 300px; */
   background-color: #B4D4FF;
   display: flex;
   align-items: center;
   flex-direction: column;
   padding: 20px 40px;
+  border-radius: 20px;
 }
 
 .wrapper .input-section {
@@ -30,6 +32,9 @@ body {
   font-size: 18px;
   border-radius: 10px;
   border: none;
+}
+.input-section button {
+  
 }
 
 .wrapper .task-section {
@@ -45,7 +50,7 @@ body {
 }
 ul li {
   width: 100%;
-  background-color: beige;
+  background-color: #86B6F6;
   padding: 10px 20px;
   border-radius: 10px;
 }
