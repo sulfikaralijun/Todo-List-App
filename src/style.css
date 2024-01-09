@@ -14,10 +14,11 @@ body {
 }
 .wrapper {
   width: 300px;
-  /* background-color: aqua; */
+  background-color: #B4D4FF;
   display: flex;
   align-items: center;
   flex-direction: column;
+  padding: 20px 40px;
 }
 
 .wrapper .input-section {
