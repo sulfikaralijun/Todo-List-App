@@ -22,9 +22,15 @@ body {
   padding: 20px 40px;
   border-radius: 20px;
 }
+.wrapper h1 {
+  color: #176B87;
+}
 
 .wrapper .input-section {
   margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 .input-section input {
   width: 200px;
@@ -33,8 +39,17 @@ body {
   border-radius: 10px;
   border: none;
 }
+.input-section input:focus {
+  outline: none;
+}
 .input-section button {
-  
+  height: 31px;
+  width: 31px;
+  background: transparent;
+  border: none;
+}
+button img {
+  width: 100%;
 }
 
 .wrapper .task-section {
@@ -53,4 +68,5 @@ ul li {
   background-color: #86B6F6;
   padding: 10px 20px;
   border-radius: 10px;
+  color: #003d52;
 }
