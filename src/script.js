@@ -4,23 +4,23 @@ const input = document.getElementById("text"),
 
 const tasks = [
 	"Learn HTML",
-	"Learn CSS",
-	"Learn JS",
-	"Learn Bootstrap",
-	"Learn Sass",
-	"Learn Angular",
-	"Learn React",
-	"Learn Vue",
-	"Learn Node",
-	"Learn MongoDB",
-	"Learn Firebase",
-	"Learn GraphQL",
-	"Learn Python",
-	"Learn C++",
-	"Learn C#",
-	"Learn Java",
-	"Learn PHP",
-	"Learn C",
+	// "Learn CSS",
+	// "Learn JS",
+	// "Learn Bootstrap",
+	// "Learn Sass",
+	// "Learn Angular",
+	// "Learn React",
+	// "Learn Vue",
+	// "Learn Node",
+	// "Learn MongoDB",
+	// "Learn Firebase",
+	// "Learn GraphQL",
+	// "Learn Python",
+	// "Learn C++",
+	// "Learn C#",
+	// "Learn Java",
+	// "Learn PHP",
+	// "Learn C",
 ];
 
 function showTask() {
@@ -29,10 +29,18 @@ function showTask() {
 		console.log(taskElement);
 	});
 }
-
-showTask();
+showTask()
 
 const addTask = () => {
-	input.value;
+	let inputTask = input.value;
+  if (inputTask === "") {
+    return alert("Please enter a task");
+  }
+  tasks.push(inputTask);
+  showTask();
 };
+
 btn.addEventListener("click", addTask);
+input.addEventListener("keyup", (event) => {
+  (event.key === "Enter") && addTask();
+});
