@@ -1,4 +1,4 @@
-const input = document.getElementById("text"),
+const input = document.getElementById("taxt"),
 	btn = document.querySelector("button"),
 	taskElement = document.querySelector(".tasks");
 
