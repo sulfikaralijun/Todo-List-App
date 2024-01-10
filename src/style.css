@@ -83,13 +83,8 @@ ul li {
 ul li:hover {
   border: 2px solid #176B87;
 }
-ul li::before {
-  content: url('checklist.png');
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  /* position: absolute; */
-}
 ul li.actions {
   background-color: #EEF5FF;
+  opacity: .6;
+  text-decoration: line-through;
 }
