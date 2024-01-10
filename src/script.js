@@ -4,8 +4,8 @@ const input = document.getElementById("text"),
 
 const tasks = [
 	"Learn HTML",
-	// "Learn CSS",
-	// "Learn JS",
+	"Learn CSS",
+	"Learn JS",
 	// "Learn Bootstrap",
 	// "Learn Sass",
 	// "Learn Angular",
