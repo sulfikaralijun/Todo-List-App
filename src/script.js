@@ -1,6 +1,6 @@
 const input = document.getElementById("taxt"),
 	btn = document.querySelector("button"),
-	taskElement = document.querySelector(".tasks");
+	tasksElement = document.querySelector(".tasks");
 
 const tasks = [
 	"Learn HTML",
@@ -28,7 +28,7 @@ function showTask() {
 	tasks.forEach((task) => {
 		newTask += `<li>${task}</li>`;
 	});
-	taskElement.innerHTML = newTask;
+	tasksElement.innerHTML = newTask;
 }
 showTask()
 
@@ -47,3 +47,11 @@ btn.addEventListener("click", addTask);
 input.addEventListener("keyup", (event) => {
   (event.key === "Enter") && addTask();
 });
+
+const taskElement = document.querySelectorAll(".tasks li");
+taskElement.forEach((taskE) => {
+	taskE.addEventListener("click", () => {
+		this.taskE.classList.add("actions");
+		console.log(taskE);
+	})
+})
