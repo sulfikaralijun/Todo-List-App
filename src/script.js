@@ -1,4 +1,4 @@
-const input = document.getElementById("taxt"),
+const input = document.getElementById("task"),
 	btn = document.querySelector("button"),
 	tasksElement = document.querySelector(".tasks");
 
@@ -49,9 +49,8 @@ input.addEventListener("keyup", (event) => {
 });
 
 const taskElement = document.querySelectorAll(".tasks li");
-taskElement.forEach((taskE) => {
-	taskE.addEventListener("click", () => {
-		this.taskE.classList.add("actions");
-		console.log(taskE);
-	})
+taskElement.forEach((task) => {
+	task.addEventListener("click", () => {
+		task.classList.toggle("actions");
+	});
 })

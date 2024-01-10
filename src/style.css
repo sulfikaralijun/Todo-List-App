@@ -83,6 +83,7 @@ ul li {
 ul li:hover {
   border: 2px solid #176B87;
 }
+
 ul li.actions {
   background-color: #EEF5FF;
 }
