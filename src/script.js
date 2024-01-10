@@ -24,10 +24,11 @@ const tasks = [
 ];
 
 function showTask() {
+  let newTask = '';
 	tasks.forEach((task) => {
-		taskElement.innerHTML += `<li>${task}</li>`;
-		console.log(taskElement);
+		newTask += `<li>${task}</li>`;
 	});
+	taskElement.innerHTML = newTask;
 }
 showTask()
 
