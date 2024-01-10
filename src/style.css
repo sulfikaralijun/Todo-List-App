@@ -78,4 +78,8 @@ ul li {
   border-radius: 10px;
   color: #003d52;
   cursor: pointer;
+  border: 2px solid #86B6F6;
+}
+ul li:hover {
+  border: 2px solid #176B87;
 }
