@@ -36,9 +36,11 @@ const addTask = () => {
 	let inputTask = input.value;
   if (inputTask === "") {
     return alert("Please enter a task");
+  } else {
+    tasks.push(inputTask);
+    showTask();
+    input.value = '';
   }
-  tasks.push(inputTask);
-  showTask();
 };
 
 btn.addEventListener("click", addTask);
