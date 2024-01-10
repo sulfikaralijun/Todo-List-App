@@ -1,7 +1,9 @@
+// get element
 const input = document.getElementById("task"),
 	btn = document.querySelector("button"),
 	tasksElement = document.querySelector(".tasks");
 
+// initialize data
 const tasks = [
 	"Learn HTML",
 	"Learn CSS",
@@ -23,6 +25,7 @@ const tasks = [
 	// "Learn C",
 ];
 
+// show task in the list
 function showTask() {
   let newTask = '';
 	tasks.forEach((task) => {
@@ -32,6 +35,7 @@ function showTask() {
 }
 showTask()
 
+// add task to data
 const addTask = () => {
 	let inputTask = input.value;
   if (inputTask === "") {
@@ -43,11 +47,13 @@ const addTask = () => {
   }
 };
 
+// handle add task
 btn.addEventListener("click", addTask);
 input.addEventListener("keyup", (event) => {
   (event.key === "Enter") && addTask();
 });
 
+// handle actions
 const taskElement = document.querySelectorAll(".tasks li");
 taskElement.forEach((task) => {
 	task.addEventListener("click", () => {
