@@ -29,7 +29,7 @@ const addTask = () => {
     return alert("Please enter a task");
   } else {
     tasks.push(inputTask);
-    tasksElement.innerHTML += `<li>${inputTask}</li>
+    tasksElement.innerHTML += `<li>${inputTask}</li>`
     input.value = '';
   }
 };
