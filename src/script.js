@@ -10,13 +10,17 @@ const tasks = [
 	"Learn JS",
 ];
 
+function show(newTask) {
+  tasksElement.innerHTML += tasks
+}
+
 // show task in the list
 function showTask() {
   let newTask = '';
 	tasks.forEach((task) => {
 		newTask += `<li>${task}</li>`;
 	});
-	tasksElement.innerHTML = newTask;
+	tasksElement.innerHTML += newTask;
 }
 showTask()
 
@@ -27,7 +31,7 @@ const addTask = () => {
     return alert("Please enter a task");
   } else {
     tasks.push(inputTask);
-    showTask();
+    tasksElement.innerHTML += inputTask
     input.value = '';
   }
 };
