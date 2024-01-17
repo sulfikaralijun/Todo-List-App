@@ -10,9 +10,7 @@ const tasks = [
 	"Learn JS",
 ];
 
-function show(newTask) {
-  tasksElement.innerHTML += tasks
-}
+
 
 // show task in the list
 function showTask() {
