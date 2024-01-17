@@ -42,6 +42,6 @@ input.addEventListener("keyup", (event) => {
 const taskElement = document.querySelectorAll(".tasks li");
 taskElement.forEach((task) => {
 	task.addEventListener("click", () => {
-		task.classList.toggle("actions");
+		task.classList.add("actions");
 	});
 })
