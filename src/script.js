@@ -10,12 +10,10 @@ const tasks = [
 	"Learn JS",
 ];
 
-
-
 // show task in the list
 function showTask() {
   let newTask = '';
-	tasks.forEach((task) => {
+	tasks.forEach((task) =>
 		newTask += `<li>${task}</li>`;
 	});
 	tasksElement.innerHTML += newTask;
